@@ -58,7 +58,7 @@ body {
 
 }
 
-a{
+.navbar{
 	background: none;
 	border: 0;
 	box-sizing: border-box;
@@ -73,7 +73,7 @@ a{
 	font-size: 3vw;
   }
 
-a:before, a:after {
+.navbar:before, .navbar:after {
 
     content: '';
     position: absolute;
@@ -175,13 +175,6 @@ transition: color 0.25s;
   flex-direction: column;
   }
 
-  #column2{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  }
-
   #overlay {
   display: none;
   position: fixed;
@@ -196,9 +189,18 @@ transition: color 0.25s;
   .pic-click {
   position: fixed;
   z-index: 21;
-  width: 80%;
-  top: 10%;
-  left: 10%;
+  object-fit: scale-down;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: none;
+
+}
+
+#pic-click-img {
+    height: 40vw;
 }
 
 #close {
@@ -252,7 +254,72 @@ transition: color 0.25s;
 .pic-click:hover {
   cursor: default;
 }
+
+.picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+#navbar-container-art {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 3vw;
+  margin-bottom: 1vw;
+        position: relative;
+
+}
+
+/*ABOUT*/
+
+#container-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  }
+
+#about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    flex-direction: column;
+
+}
+
+.description {
+  font-family: "Annie Use Your Telescope", cursive;
+  font-size: 1.5vw;
+}
+
+#description-container {
+    margin-right: 15vw;
+display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#profile-about {
+  width: 40vw;
+  margin-left: 15vw;
+  margin-right: 5vw;
+}
+
+#extra {
+  height: 10vw;
+}
+
+#no-extra-container {
+  margin-top: 2vw;
+display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 }
 
 

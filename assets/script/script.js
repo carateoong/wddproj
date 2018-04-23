@@ -34,18 +34,26 @@ let pics = {
     $(".fancy-box").css("width", "22.5vw");
     $(".fancy-box").css("height", "3vw");
 
-
+    //jQuery Function Number 4
 	$(".picture").click(function() {
-	console.log("ASfdfdas");
-		//jQuery Function Number 3
+		//jQuery Function Number 5
 		$("#overlay").show();
-		$(this).addClass("pic-click");
+		
+		//jQuery Function Number 6
+    	img = this.getAttribute("src");
+
+
+    	//jQuery Function Number 7
+    	$(".pic-click > img").attr("src", img);
+    	$(".pic-click").show();
+
 	})
 
 	$("#overlay").click(function() {
-		//jQuery Function Number 4
-		$(".picture").removeClass("pic-click");
+
+    	//jQuery Function Number 8
 		$(this).hide();
+		$(".pic-click").hide();
 	})
 
 
